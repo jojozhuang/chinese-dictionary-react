@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Form,
-  FormGroup,
-  Col,
-  Radio,
-  Button,
-  ControlLabel,
-  FormControl,
-  Tooltip,
-  OverlayTrigger,
-} from 'react-bootstrap';
+import { Form, FormGroup, Col, Button, ControlLabel, FormControl } from 'react-bootstrap';
 import WordOutput from './controls/WordOutput';
 import IdiomOutput from './controls/IdiomOutput';
 import RiddleOutput from './controls/RiddleOutput';
@@ -58,7 +48,7 @@ class Dictionary extends React.Component {
     const length = this.state.keyword.length;
     if (length > 3) return 'success';
     // else if (length > 1) return 'warning';
-    else if (length === 0) return 'error';
+    // else if (length === 0) return 'error';
     return null;
   }
 
