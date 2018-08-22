@@ -3,14 +3,14 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
-import Editor from './Editor';
+import Dictionary from './Dictionary';
 
 const App = () => (
   <div>
     <Header />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/editor" component={Editor} />
+      <Route path="/dictionary" component={Dictionary} />
     </Switch>
     <Footer />
   </div>

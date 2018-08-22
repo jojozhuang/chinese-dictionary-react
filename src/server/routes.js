@@ -9,9 +9,10 @@ router.get('/', (req, res) => {
   res.json({ message: 'Hello! welcome to our api!' });
 });
 
+router.get('/test', dictionary_controller.get_test);
 router.get('/word/:word', dictionary_controller.get_word);
 router.get('/idiom1/:abbr', dictionary_controller.get_idiom1);
 router.get('/idiom2/:word', dictionary_controller.get_idiom2);
-router.get('/xiehouyu/:riddle', dictionary_controller.get_xiehouyu);
+router.get('/riddle/:riddle', dictionary_controller.get_riddle);
 
 module.exports = router;
